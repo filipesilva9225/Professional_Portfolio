@@ -1,7 +1,11 @@
-import { useState } from "react";
+import Home from "../src/pages/Home/Home.tsx";
 
 const App = () => {
-  return <>app</>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 };
 
 export default App;
