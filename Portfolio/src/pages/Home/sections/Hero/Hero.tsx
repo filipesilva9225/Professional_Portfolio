@@ -22,23 +22,19 @@ const Hero = () => {
               <StyledImage src={Avatar} />
             </Grid>
             <Grid size={{ xs: 12, md: 8 }}>
-              <Typography
-                variant="h1"
-                color="secondary.contrastText"
-                align="center"
-              >
+              <Typography variant="h1" color="secondary" align="center">
                 Filipe Silva
               </Typography>
-              <Typography
-                color="primary.contrastText"
-                variant="h3"
-                align="center"
-              >
+              <Typography color="primary" variant="h3" align="center">
                 Engenheiro De Software
               </Typography>
               <Grid
                 container
-                sx={{ display: "flex", justifyContent: "center" }}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
                 <Grid
                   size={{ xs: 12, md: 4 }}
@@ -46,7 +42,7 @@ const Hero = () => {
                 >
                   <StyledButton>
                     <DownloadIcon />
-                    Download CV
+                    <Typography>Download CV</Typography>
                   </StyledButton>
                 </Grid>
                 <Grid
@@ -55,7 +51,7 @@ const Hero = () => {
                 >
                   <StyledButton>
                     <EmailIcon />
-                    Contate-me
+                    <Typography>Contate-me</Typography>
                   </StyledButton>
                 </Grid>
               </Grid>
